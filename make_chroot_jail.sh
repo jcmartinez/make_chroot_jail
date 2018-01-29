@@ -483,7 +483,8 @@ cp /etc/pam.d/* ${JAILPATH}/etc/pam.d/
 echo "Copying PAM-Modules to jail"
 cp -r /lib/x86_64-linux-gnu/security ${JAILPATH}/lib/
 # this is needed for Ubuntu 8.04, but will not hurt on 12.04 neither
-cp -r /lib/security ${JAILPATH}/lib/
+# but it doesn't work on Ubuntu 16.04.
+#cp -r /lib/security ${JAILPATH}/lib/
 
 # ...and something else useful for PAM
 cp -r /etc/security ${JAILPATH}/etc/

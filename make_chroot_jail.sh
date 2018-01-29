@@ -129,7 +129,7 @@ elif [ "$DISTRO" = FEDORA ]; then
 elif [ "$DISTRO" = REDHAT ]; then
   APPS="/bin/bash /bin/cp /usr/bin/dircolors /bin/ls /bin/mkdir /bin/mv /bin/rm /bin/rmdir /bin/sh /bin/su /usr/bin/groups /usr/bin/id /usr/bin/nc /usr/bin/rsync /usr/bin/ssh /usr/bin/scp /sbin/unix_chkpwd"
 elif [ "$DISTRO" = DEBIAN ]; then
-  APPS="/bin/bash /bin/cp /usr/bin/dircolors /bin/ls /bin/mkdir /bin/mv /bin/rm /bin/rmdir /bin/sh /bin/su /usr/bin/groups /usr/bin/id /usr/bin/rsync /usr/bin/ssh /usr/bin/scp /sbin/unix_chkpwd /bin/cat /bin/more /usr/bin/less /usr/bin/nano"
+  APPS="/bin/bash /bin/cp /usr/bin/dircolors /usr/bin/git /usr/bin/git-shell /usr/bin/git-upload-pack /bin/ls /bin/mkdir /bin/mv /bin/rm /bin/rmdir /bin/sh /bin/su /usr/bin/groups /usr/bin/id /usr/bin/rsync /usr/bin/ssh /usr/bin/scp /sbin/unix_chkpwd /bin/cat /bin/more /usr/bin/less /usr/bin/nano"
 else
   APPS="/bin/bash /bin/cp /usr/bin/dircolors /bin/ls /bin/mkdir /bin/mv /bin/rm /bin/rmdir /bin/sh /bin/su /usr/bin/groups /usr/bin/id /usr/bin/rsync /usr/bin/ssh /usr/bin/scp /usr/sbin/unix_chkpwd"
 fi

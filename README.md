@@ -22,6 +22,14 @@ Additional changes:
  * added APPS: cat more less nano
  * copied /lib/terminfo
  
+## Known Problems (Keeping from using it) ###
+
+* Chrooted users can see and edit the content of other chrooted users because they are part of the same group.
+
+* Chrooted users can see the content of /etc, /dev and other directories inside the chroot environment.
+
+* The new user needs to have the home set explicitly or key based SSH loging will look for the publick key on the wrong place. I.e will look for it on /home/username/.ssh/autorized_keys. To make the key authentication work you should set the home of the user to /home/www/home/username.
+
 ## Usage
 
 ```{r, engine='bash', count_lines}
